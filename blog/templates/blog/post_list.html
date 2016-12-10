@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html>
+        <head>
+            <title>maian</title>
+        </head>
+        <body>
+
+            <div>
+                <h1><a href="">Django girls blog</a></h1>
+
+            </div>
+            <section>
+              {% for post in list_articles %}
+                <article>
+                    <h2>{{post.title}}</h2>
+                    <p>{{post.text}}</p>
+                    <time>{{post.created_date}}</time>  
+                  </article>
+
+              {% endfor %}
+
+            </section>
+
+        </body>
+    </html>
